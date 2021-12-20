@@ -1,0 +1,1315 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* Header start */
+
+.header {
+    height: 80px;
+    width: 100%;
+    padding: 0 8%;
+    position: relative ;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav1 {
+    padding: 28px 0;
+}
+
+.nav1 ul {
+    display: inline-block;
+}
+
+.nav1 li {
+    display: inline-block;
+}
+
+.nav1 ul .logo {
+    font-size: 15px;
+}
+
+.nav1 .navbar li {
+    font-size: 12px;
+    padding: 5px 0;
+    margin: 0 10px;
+}
+
+.nav1 li a {
+    color: black;
+}
+
+.logo a {
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+div nav ul li img {
+    width: 8px;
+    height: 8px;
+}
+
+.loginh {
+    color: black;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.logout {
+    background: black;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 3px;
+}
+
+.logout a {
+    color: white;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav2 li {
+    font-size: smaller;
+    padding: 7px 15px;
+    position: relative;
+}
+
+
+.navmenu {
+    display: none;
+}
+
+
+
+.navmenu img {
+    width: 25px;
+    height: 25px;
+    margin: 5px 20px 0 0;
+
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    .nav1 .navbar li:first-child{
+        padding: 0;
+        margin: 0;
+    }
+    .nav1 {
+        width: 100%;
+    }
+    .nav2 {
+        width: 50%;
+    }
+    .nav2 {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .nav1 .navbar {
+        display: none;
+    }
+
+    .nav2 li {
+        padding: 7px 3px;
+    }
+
+
+    .navmenu {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+    .navdrop {
+        position: relative;
+    }
+    
+    .menubtn {
+        color: rgb(160, 22, 22);
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    .dropmenu {
+        display: none;
+        position: absolute;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    }
+    
+    .navdrop:hover .dropmenu {
+        display: block;
+    }
+
+}
+
+
+@media screen and (max-width: 430px) {
+    .nav2 {
+        display: none;
+    }
+
+    .navmenu img {
+        width: 25px;
+        height: 25px;
+        margin: 5px 0 0 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* Header ends */
+
+
+
+
+/* dropdown start */
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    color: black;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* dropdown end */
+
+
+
+
+
+/* main banner1 starts */
+
+main {
+    width: 100%;
+    padding: 0 8%;
+}
+
+main .banner1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: 250px;
+    background: black;
+    border-radius: 4px;
+}
+
+.ban1 h1 {
+    color: white;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.ban1 p {
+    color: rgb(230, 230, 230);
+    font-size: 13px;
+    padding-bottom: 12px;
+    line-height: 20px;
+}
+
+.one {
+    display: none;
+}
+
+
+
+
+.promoselect {
+    padding: 0;
+    margin-right: 10px;
+    width: 65%;
+    border: none ; 
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff;
+    position: relative;
+}
+.promoselect select {
+    color: gray;
+    font-size: 12px;
+    padding: 7px 10px;
+    width: 100%; 
+}
+
+.btn {
+    width: 35%;
+}
+
+.btn button {
+    height: 34px;
+    width: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    color: white; 
+    background: linear-gradient(to right,#FB7B30,#A831A5);
+    border: none ; 
+    border-radius: 3px; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+main .ban1 {
+    width: 60%;
+    margin: 0 50px 0 50px;
+}
+
+main .ban2 {
+    margin: 64px 50px 0 0;
+    width: 40%;
+}
+
+main .ban2 img {
+    width: 100%;
+}
+
+main .subban2 {
+    min-width: 500px;
+}
+
+main .subban1 {
+    min-width: 440px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    main .banner1 {
+        display: block;
+        text-align: center;
+        height: 300px;
+        margin-bottom: 50px;
+    }
+
+    main .ban1 {
+        width: 100%;
+        margin: 0;
+        padding: 35px 0;
+    }
+
+    main .ban2 {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+    main .ban2 img {
+        width: 200px;
+    }
+
+    .promoselect {
+        width: 100%;
+    }
+
+    main .subban1 {
+        max-width: 50%;
+        margin: auto;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .sep1 {
+        height: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 590px) {
+    main .banner1 {
+        height: 400px;
+        margin-bottom: 30px;
+
+    }
+    main .subban2 {
+        min-width: 100%;
+        padding: 0 20px;
+    }
+    main .subban1 {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .promoselect {
+        padding: 0;
+        margin: 5px;
+        width: 75%;
+    }
+    .btn {
+        width: 55%;
+    }
+
+    .ban1 h1 {
+        font-size: 20px;
+    }
+    
+    .ban1 p {
+        font-size: 10px;
+        line-height: normal;
+        padding: 10px;
+    }
+
+}
+
+
+
+
+
+
+/* main banner1 ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* brands starts */
+
+.brands {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.brands div {
+    padding: 10px 0;
+}
+
+.brands img {
+    width: 100%;
+    height: 35px;
+}
+
+@media screen and (max-width: 950px) {
+    .brands {
+        justify-content: space-between;
+    }
+    .brands img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .brands {
+        justify-content: space-between;
+    }
+    .brands img {
+        height: 30px;
+    }
+}
+
+/* brands ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main banner2 starts */
+.sep {
+    height: 50px;
+}
+
+main .banner2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .banner2 img {
+    width: 100%;
+}
+
+.content {
+    padding: 50px 55px;
+}
+
+.content div {
+    padding: 18px 0;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content p {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.btn2 button {
+    height: 34px;
+    width: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    color: white; 
+    background: linear-gradient(to right,#FB7B30,#A831A5);
+    border: none ; 
+    border-radius: 3px; 
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.content .btn2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h4 {
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+
+.content h4 img {
+    width: 28px;
+    margin: -5px 2px -11px -5px;
+    padding: 0;
+}
+
+.content h1 img {
+    width: 30px;
+}
+
+.content .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 950px) {
+    .sep {
+        height: 0px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    main .banner2 {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main .banner2 .il1 img {
+        width: 40%;
+    }
+    main .banner2 .il2 img {
+        width: 40%;
+    }
+
+    main .banner2 .il1 {
+        background: #AEE9EB;
+        text-align: center;
+    }
+    main .banner2 .il2 {
+        background: #FF7790;
+        text-align: center;
+    }
+}
+
+/* main banner2 ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main banner3 starts */
+
+
+main .banner3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    height: 250px;
+    background: black;
+    border-radius: 5px;
+}
+
+
+main .ban31 {
+    font-size: 15px;
+    color: white;
+    width: 40%;
+    min-width: 45%;
+    margin: 0 0 0 40px;
+}
+
+main .ban31 h1 {
+    margin: 0 0 10px 0;
+}
+
+main .ban31 p {
+    font-size: 13px;
+    line-height: 25px;
+}
+
+
+main .ban31 .subban32 img {
+    width: 16px;
+    margin: 0px 10px -3px 0px;
+}
+
+main .ban32 {
+    width: 55%;
+    margin: 0 50px 0 0;
+}
+
+main .ban32 img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+main .subban31 {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn31 button {
+    height: 34px;
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: black; 
+    background: white;
+    border: none ; 
+    border-radius: 3px; 
+    padding: 0 0 2px 0;
+    margin: 0;
+}
+
+.btn31 {
+    margin-right: 6px;
+    width: 40%;
+}
+
+.btn31 img {
+    margin: 0px 10px -3px 0px;
+    width: 13px;
+}
+
+.btn32 button {
+    height: 34px;
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    color: white; 
+    background: linear-gradient(to right,#FB7B30,#A831A5);
+    border: none ; 
+    border-radius: 3px; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+.btn32 {
+    width: 32%;
+}
+
+
+
+
+@media screen and (max-width: 950px) {
+    main .ban31 {
+        width: 100%;
+    }
+    .btn32 {
+        width: 100%;
+    }
+    .btn31 {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    main .banner3 {
+        flex-flow: row wrap-reverse;
+        height: 400px;
+        margin: 0;
+        text-align: center;
+    }
+    main .ban32 {
+        width: 100%;
+        margin: 0 50px 0 0;
+        top: 50px;
+    }
+    main .ban31 {
+        width: 100%;
+        margin: 40px 10px ;
+    }
+}
+
+
+/* main banner3 ends */
+
+
+
+
+
+
+
+
+
+/* main grid starts */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 30%;
+}
+#c1 {
+    max-width: 29%;
+    padding: 0 10px 0 0;
+}
+.small {
+    max-width: 80%;
+    float: right;
+}
+#c2 {
+    max-width: 21%;
+    padding: 0 10px;
+}
+#c3 {
+    max-width: 28%;
+    padding: 0 10px;
+}
+#c4 {
+    max-width: 22%;
+    padding: 0 0 0 10px;
+}
+
+  
+
+
+.column img {
+    margin: 8px 0 15px 0;
+    vertical-align: middle;
+    width: 100%;
+}
+  
+@media screen and (max-width: 950px) {
+    .column {
+        flex: 50%;
+    }
+    #c1 {
+        max-width: 61%;
+        padding: 0 10px 0 0;
+    }
+    .small {
+        max-width: 80%;
+        float: right;
+    }
+    #c2 {
+        max-width: 39%;
+        padding: 0 10px;
+    }
+    #c3 {
+        max-width: 56%;
+        padding: 0 10px;
+    }
+    #c4 {
+        max-width: 44%;
+        padding: 0 0 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        flex: 100%;
+    }
+    #c1 {
+        max-width: 100%;
+        padding: 0 ;
+    }
+    .small {
+        max-width: 100%;
+        float: right;
+    }
+    #c2 {
+        max-width: 100%;
+        padding: 0;
+    }
+    #c3 {
+        max-width: 100%;
+        padding: 0 ;
+    }
+    #c4 {
+        max-width: 100%;
+        padding: 0 ;
+    }
+}
+
+
+  /* main grid ends */
+
+
+
+
+
+
+
+
+
+
+
+/* footer starts */
+
+footer {
+    width: 100%;
+    padding: 0 8%;
+}
+
+.footer1 {
+    color: white;
+    height: 180px;
+    background: #0A0A0A;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.fdiv1 {
+    vertical-align: middle;
+    width: 50%;
+    max-width: 40%;
+    padding: 0 50px;
+    line-height: 19px;
+    color: rgb(245, 245, 245);
+}
+
+.fdiv1 img {
+    width: 15px;
+    padding: 10px 0;
+    margin: 0 1px;
+}
+
+
+.fdiv2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 50%;
+    max-width: 45%;
+    padding: 0 50px;
+    line-height: 19px;
+}
+
+.fdiv2 h4 {
+    line-height: 30px;
+    color: rgb(245, 245, 245);
+}
+
+.fdiv2 li {
+    font-size: 11px;
+    color: rgb(220, 220, 220);
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    color: gray;
+}
+
+@media screen and (max-width: 950px) {
+    .footer1 {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        height: 280px;
+    }
+
+    .fdiv1 {
+        padding: 20px 70px;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fdiv2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer2 {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .footer1 {
+        height: 400px;
+    }
+
+    .fdiv1 {
+        padding: 20px 10px;
+    }
+
+    .fdiv2 {
+        flex-wrap: wrap;
+        padding: 0 10px;
+        justify-content: space-around;
+    }
+
+    .fdiv2 ul {
+        padding: 5px 0;
+        text-align: center;
+        min-width: 130px;
+    }
+}
+
+
+@media screen and (max-width: 332px) {
+    .footer1 {
+        height: 600px;
+    }
+}
+
+
+
+
+/* footer ends */
+
+
+
+
+
+
+
+
+/* login starts */
+
+.loginmain {
+    width: 100%;
+    padding: 0 8%;
+}
+
+.backlogin {
+    width: 100%;
+    padding: 0 20% 5% 20%;
+}
+
+.login {
+    text-align: center;
+    background: black;
+    width: 100%;
+    border-radius: 4px;
+    padding: 20px 50px;
+}
+
+.lform {
+    width: 100%;
+}
+
+.login h1 {
+    color: white;
+    text-align: center;
+}
+.login h5{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.login img {
+    width: 70%;
+
+}
+
+.login a {
+    color: white;
+    font-size: 10px;
+}
+
+.login a img {
+    margin: 0 5px;
+    width: 30px;
+}
+
+
+.login button {
+    height: 34px;
+    width: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    color: white; 
+    background: linear-gradient(to right,#FB7B30,#A831A5);
+    border: none ; 
+    border-radius: 3px; 
+    padding: 0;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+.login form {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+
+.login input {
+    margin: 0 0 .4em 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+[type='text'] {
+    padding: 20px;
+}
+
+
+[type='text']:focus {
+    border: 0;
+    border-bottom: 5px solid #2980b9;
+    color: #2c3e50;
+    outline: none;
+}
+
+@media screen and (max-width: 800px) {
+    .backlogin {
+        padding: 0 10% 5% 10%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .backlogin {
+        padding: 0 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login {
+        border-radius: 40px;
+    }
+
+    .login img {
+        width: 100%;
+    }
+
+    .lform input {
+        font-size: 10px;
+    }
+
+    .login {
+        padding: 20px 10px;
+    }
+    
+}
+
+
+
+
+
+
+/* login ends */
+
+
+
+
+
+
+
+
+/* signup starts */
+
+.signupmain {
+    width: 100%;
+    padding: 0 8%;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.f1 {
+    width: 100%;
+    padding-right: 5px;
+}
+
+.f2 {
+    width: 100%;
+    padding-left: 5px;
+}
+
+.backsignup {
+    width: 100%;
+    padding: 0 20% 5% 20%;
+}
+
+.signup {
+    text-align: center;
+    background: black;
+    width: 100%;
+    border-radius: 4px;
+    padding: 20px 50px;
+}
+
+.sform {
+    width: 100%;
+}
+
+.signup h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+.signup h5{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.signup h6{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.signup img {
+    width: 50%;
+
+}
+
+.signup a {
+    color: white;
+    font-size: 10px;
+}
+
+.signup a img {
+    margin: 0 5px;
+    width: 30px;
+}
+
+
+.signup button {
+    height: 34px;
+    width: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    color: white; 
+    background: linear-gradient(to right,#FB7B30,#A831A5);
+    border: none ; 
+    border-radius: 3px; 
+    padding: 0;
+    margin: 20px 0 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+.signup form {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.signup input {
+    margin: 0 0 .4em 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+[type='text'] {
+padding: 20px;
+}
+
+
+[type='text']:focus {
+border: 0;
+border-bottom: 5px solid #2980b9;
+color: #2c3e50;
+outline: none;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .backsignup {
+        padding: 0 10% 5% 10%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .backsignup {
+        padding: 0 0 40px 0;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .signup {
+        border-radius: 40px;
+    }
+
+    .signup img {
+        width: 50%;
+    }
+
+    .sform input {
+        font-size: 12px;
+    }
+
+    .signup {
+        padding: 20px 10px;
+    }
+
+    .flex {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+
+    .f1 {
+        padding: 0;
+    }
+    .f2 {
+        padding: 0;
+    }
+
+    .signup input {
+        width: 80%;
+    }
+
+    .signup h6 {
+        font-size: 10px;
+        margin: 20px 0;
+    }
+    
+}
+
+
+
+
+/* signup ends */
